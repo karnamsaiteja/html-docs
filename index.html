@@ -1,0 +1,264 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!------------------- STYLE SHEETS -------------------->
+
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="queries.css"/>
+
+    <!------------------- FONT AWESOME -------------------->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!------------------- GOOGLE FONTS -------------------->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">   
+    
+    <!------------------- TITLE -------------------->
+
+    <title>HTML Docs</title>
+
+  <body>
+
+    <!------------------- HEADER -------------------->
+
+      <header class="header">
+
+        <!------------------- LOGO -------------------->
+
+          <div class="logo">
+            <i class="logo-icon fa-brands fa-html5"></i>              
+            <p class="logo-name">HTML <span style="color: #d3d4d4;">Docs</span></p>
+          </div>
+
+        <!------------------- SEARCH BAR -------------------->
+
+          <div class="search-bar-container">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input class="search-bar" type="text" placeholder="Search the docs"/>
+          </div>
+
+        <!------------------- NAVIGATION -------------------->
+
+          <nav class="navigation">
+            <a href="/pages/home.html" class="nav-item">Home</a>
+            <a href="#" class="nav-item nav-item-active">Guides</a>
+            <a href="/pages/manuals.html" class="nav-item">Manuals</a>
+            <a href="/pages/reference.html" class="nav-item">Reference</a>
+            <a href="/pages/samples.html" class="nav-item">Samples</a>
+
+          </nav>
+
+        <!------------------- BURGER BUTTON (FOR MOBILE NAV) -------------------->
+
+          <button class="btn-mobile-nav">
+            <i class="icon-mobile-nav open-btn fa-solid fa-bars"></i>
+        </button>
+      </header>
+
+    <!------------------- MAIN SECTION -------------------->
+
+      <main class="main">
+
+        <!------------------- SIDE BAR -------------------->
+
+        <section class="left-nav">
+
+            <!--------  1 ---------->
+
+            <div class="accordion side">
+                <p class="title side-nav-item side-bar-active">Docker overview</p>
+            </div>
+
+            <!--------  2 ---------->
+
+            <div class="accordion">
+                <p class="title side-nav-item">Get Docker</p>
+            </div>
+
+            <!--------  3 ---------->
+
+            <div class="accordion open">
+                <div class="title">
+                    <p class="title-inner">Get Started</p>
+                    <i class="fa-solid fa-chevron-down"></i>    
+                </div>
+                <div class="hidden-box">
+                    <div class="hidden-list">
+                        <p class="side-nav-item-inner">Part 1: Getting Started</p>
+                        <p class="side-nav-item-inner">Part 2: Sample application</p>
+                        <p class="side-nav-item-inner">Part 3: Update the application</p>
+    
+                    </div>
+                </div>
+            </div>
+
+            <!--------  4 ---------->
+
+            <div class="accordion">
+                <div class="title">
+                    <p class="title-inner">Language-specific guides</p>
+                    <i class="fa-solid fa-chevron-down"></i>    
+                </div>
+                <div class="hidden-box">
+                    <div class="hidden-list">
+                        <p class="side-nav-item-inner">Overview</p>
+                        <p class="side-nav-item-inner">Node.js</p>
+                        <p class="side-nav-item-inner">Python</p>
+                        <p class="side-nav-item-inner">Java</p>
+                        <p class="side-nav-item-inner">Go</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--------  5 ---------->
+
+            <div class="accordion">
+                <div class="title">
+                    <p class="title-inner">Develop with Docker</p>
+                    <i class="fa-solid fa-chevron-down"></i>    
+                </div>
+                <div class="hidden-box">
+                    <div class="hidden-list">
+                        <p class="side-nav-item-inner">Overview</p>
+                        <p class="side-nav-item-inner">Best practices</p>
+                        <p class="side-nav-item-inner">Build Images</p>
+    
+                    </div>
+                </div>
+            </div>
+            <!--------  6 ---------->
+
+            <div class="accordion">
+                <div class="title">
+                    <p class="title-inner">Set up CI/CD</p>
+                    <i class="fa-solid fa-chevron-down"></i>    
+                </div>
+                <div class="hidden-box">
+                    <div class="hidden-list">
+                        <p class="side-nav-item-inner">CI/CD Best practices</p>
+                        <p class="side-nav-item-inner">Configure GitHub Actions</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--------  7 ---------->
+
+            <div class="accordion">
+                <div class="title">
+                    <p class="title-inner">Deploy your app the cloud</p>
+                    <i class="fa-solid fa-chevron-down"></i>    
+                </div>
+                <div class="hidden-box">
+                    <div class="hidden-list">
+                        <p class="side-nav-item-inner">Docker and ACI</p>
+                        <p class="side-nav-item-inner">ACI container features</p>
+                        <p class="side-nav-item-inner">ACI Compose features</p>
+    
+                    </div>
+                </div>
+            </div>
+
+            <!--------  8 ---------->
+            <div class="accordion">
+                <div class="title">
+                    <p class="title-inner">Run your app</p>
+                    <i class="fa-solid fa-chevron-down"></i>    
+                </div>
+                <div class="hidden-box">
+                    <div class="hidden-list">
+                        <p class="side-nav-item-inner">Orchestration</p>
+                        <p class="side-nav-item-inner">Configure all objects</p>
+                        <p class="side-nav-item-inner">Configure the daemon</p>
+    
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+       <!------------------- CONTENT SECTION -------------------->
+
+        <section class="content-section">
+
+            <!---------  1 ---------->
+
+            <h2 class="content-heading">Docker Overview</h2>
+
+            <em><p style="color: #d3d4d4;">Estimated reading time: 8 minutes</p></em>
+
+            <p class="content-paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quo nihil possimus maiores natus quam officiis, nemo praesentium maxime distinctio alias reprehenderit architecto minima aperiam quis sint expedita perferendis nesciunt?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad deleniti dicta sed reiciendis quae voluptatum maxime saepe facere quibusdam ipsa minima modi laudantium nihil eius tempore eveniet tempora, quo ex!
+            </p>
+
+            <!---------  2 ---------->
+
+            <h2 class="content-heading">The Docker platform</h2>
+
+            <p class="content-paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quo nihil possimus maiores natus quam officiis, nemo praesentium maxime distinctio alias reprehenderit architecto minima aperiam quis sint expedita perferendis nesciunt?
+            </p>
+
+            <!---------  3 ---------->
+
+            <h2 class="content-heading">What can I use Docker for</h2>
+
+            <p class="content-paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quo nihil possimus maiores natus quam officiis, nemo praesentium maxime distinctio alias reprehenderit architecto minima aperiam quis sint expedita perferendis nesciun.Fuga quo nihil possimus maiores natus quam officiis, nemo praesentium maxime distinctio alias reprehenderit architecto minima aperiam quis sint expedita perferendis nesciun.
+            </p>
+
+            <!---------  4 ---------->
+
+            <h2 class="content-heading">Docker Architecture</h2>
+
+            <p class="content-paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quo nihil possimus maiores natus quam officiis, nemo praesentium maxime distinctio alias reprehenderit architecto minima aperiam quis sint expedita perferendis nesciunt?
+            </p>
+
+            <!---------  5 ---------->
+
+            <h2 class="content-heading">The Docker Daemon</h2>
+
+            <p class="content-paragraph">
+                Fuga quo nihil possimus maiores natus quam officiis, nemo praep.Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quo nihil possimus maiores natus quam officiis, nemo praeprehenderit architecto minima aperiam quis sint expedita perferendis nesciunt?
+            </p>
+
+            <!---------  6 ---------->
+
+            <h2 class="content-heading">Docker Desktop</h2>
+
+            <p class="content-paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quo nihil possimus maiores natus quam officiis, nemo praesentium maxime distinctio alias reprehenderit architecto minima aperiam quis sint expedita perferendis nesciunt?
+            </p>
+
+            <!---------  7 ---------->
+
+            <h2 class="content-heading">Docker Registries</h2>
+
+            <p class="content-paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quo nihil possimus maiores natus quam officiis, nemo praesentium maxime distinctio alias reprehenderit architecto minima aperiam quis sint expedita perferendis nesciunt?
+            </p>
+
+            <!---------  8 ---------->
+
+            <h2 class="content-heading">Docker objects</h2>
+
+            <p class="content-paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quo nihil possimus maiores natus quam officiis, nemo praesentium maxime distinctio alias reprehenderit architecto minima aperiam quis sint expedita perferendis nesciunt?
+            </p>
+
+        </section>
+
+    </main>
+        <!------------------- JS FILE -------------------->
+
+        <script src="script.js"></script>
+     
+  </body>
+</html>

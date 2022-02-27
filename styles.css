@@ -1,3 +1,22 @@
+/* NOTE */
+
+/* Add side-bar-active class using JS or ReactJS to make the side-bar-items active. */
+
+/****************** CSS VARIABLES ******************/
+
+:root {
+  --main-background: #031f30;
+  --text-color: #d3d4d4;
+  --bar-background: #0f1c24;
+  --bar-text-color: #9cd4f7;
+  --hover-bar-text-color: #85b6d3;
+  --side-bar-active: #0b1419;
+  --blue-border: #1282d7;
+  --color-primary-darker: #222;
+  --color-secondary-darker: #333;
+  --color-general-white: #fff;
+  --btn-box-shadow: rgba(0, 0, 0, 0.329);
+}
 /****************** UNIVERSAL ******************/
 
 * {
@@ -26,11 +45,11 @@ body {
   gap: 2rem;
   padding: 2rem;
   position: fixed;
-  background-color: #0f1c24;
-  color: #d3d4d4;
+  background-color: var(--bar-background);
+  color: var(--text-color);
   width: 100%;
   box-shadow: 0 1px 13px rgb(0 0 0 / 24%);
-  z-index: 5;
+  z-index: 25;
 }
 
 /* LOGO */
@@ -41,7 +60,7 @@ body {
   gap: 6px;
   cursor: pointer;
   margin-right: 2rem;
-  color: #fff;
+  color: var(--color-general-white);
 }
 
 .logo-icon {
@@ -57,23 +76,23 @@ body {
 
 .search-bar-container {
   padding-left: 1rem;
-  background-color: #555;
+  background-color: var(--color-secondary-darker);
   margin-right: 4rem;
 }
 .search-bar {
-  background-color: #555;
+  background-color: var(--color-secondary-darker);
   outline: none;
   height: 3.2rem;
   width: 16rem;
   border: none;
   padding: 1rem;
-  color: #fff;
+  color: var(--color-general-white);
 }
 
 ::placeholder {
   font-size: 1.4rem;
   font-weight: 500;
-  color: #ddd;
+  color: var(--text-color);
 }
 
 /* NAVIGATION */
@@ -86,7 +105,7 @@ body {
 .nav-item:visited {
   cursor: pointer;
   font-weight: 600;
-  color: #9cd4f7;
+  color: var(--bar-text-color);
   text-decoration: none;
   transition: color 0.3s ease-in-out;
   position: relative;
@@ -96,7 +115,7 @@ body {
 .nav-item:active {
   display: flex;
   align-items: center;
-  color: #85b6d3;
+  color: var(--hover-bar-text-color);
 }
 .navigation {
   overflow: hidden;
@@ -118,7 +137,7 @@ body {
 }
 
 .navigation a.nav-item-active {
-  border-bottom: 3px solid #1282d7;
+  border-bottom: 3px solid var(--blue-border);
 }
 
 /* BURGER BUTTON FOR MOBILE NAV */
@@ -133,7 +152,7 @@ body {
 
 .icon-mobile-nav {
   font-size: 2.4rem;
-  color: #fff;
+  color: var(--color-general-white);
 }
 
 /****************** SIDE BAR ******************/
@@ -147,11 +166,11 @@ body {
   flex-direction: column;
   overflow: auto;
   top: 10vh;
-  background-color: #0f1c24;
-  color: #9cd4f7;
+  background-color: var(--bar-background);
+  color: var(--bar-text-color);
   z-index: 20;
   transition: all 0.3s ease-in-out;
-  border-top: 1px solid #1282d7;
+  border-top: 1px solid var(--blue-border);
 }
 
 .title {
@@ -163,7 +182,7 @@ body {
 }
 
 .title:hover {
-  color: #85b6d3;
+  color: var(--hover-bar-text-color);
 }
 
 .accordion {
@@ -193,35 +212,98 @@ body {
 }
 
 .side-nav-item-inner:hover {
-  color: #85b6d3;
+  color: var(--hover-bar-text-color);
 }
 
 .side-bar-active {
-  background-color: #0b1419;
-  border-left: 3px solid #1282d7;
+  background-color: var(--side-bar-active);
+  border-left: 3px solid var(--blue-border);
+  font-weight: 600;
 }
 
 /****************** CONTENT SECTION ******************/
 
 .content-section {
-  background-color: #031f30;
+  background-color: var(--main-background);
   padding: 4rem;
   font-size: 1.6rem;
   position: absolute;
   top: 10vh;
   left: 22vw;
   z-index: -1;
-  border-top: 1px solid #1282d7;
+  border-top: 1px solid var(--blue-border);
 }
 
 .content-heading {
-  color: #fff;
+  color: var(--color-general-white);
   margin-bottom: 2rem;
 }
 
+.big-heading {
+  font-size: 4.2rem;
+}
+
+.medium-heading {
+  font-size: 3.4rem;
+}
+
+.small-heading {
+  font-size: 2.4rem;
+}
+
 .content-paragraph {
-  color: #d3d4d4;
+  color: var(--text-color);
 
   margin-bottom: 2.4rem;
   line-height: 1.6;
 }
+
+/* NOTE */
+
+/* .overlay {
+  z-index: 35;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+}
+
+.modal {
+  z-index: 40;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 92vh;
+  padding: 4rem;
+  background: #eee;
+  font-size: 2.4rem;
+  color: #222;
+  border-radius: 4px;
+  box-shadow: 0 8px 32px 0 rgba(34, 34, 34, 0.192);
+  transition: all 0.3s ease-in-out;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  background: none;
+  font-size: 5rem;
+  color: var(--color-primary-darker);
+  border: none;
+  cursor: pointer;
+}
+
+.modal-heading {
+  font-size: 4.8rem;
+  margin-bottom: 4rem;
+}
+
+.modal-txt {
+  line-height: 1.6;
+} */

@@ -1,3 +1,5 @@
+/* FOR SMALLER DESKTOPS */
+
 @media (max-width: 62em) {
   .btn-mobile-nav {
     display: block;
@@ -12,16 +14,20 @@
   .content-section {
     left: 0;
   }
+
   .active {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     width: 25vw;
   }
+
   .content-section-width {
     left: 25vw;
   }
 }
+
+/* FOR LARGE TABS */
 
 @media (max-width: 56em) {
   .content-section-width {
@@ -33,6 +39,8 @@
   }
 }
 
+/* FOR TABS */
+
 @media (max-width: 46em) {
   .left-nav {
     left: 0;
@@ -40,6 +48,8 @@
     width: 100vw;
   }
 }
+
+/* FOR MOBILES */
 
 @media (max-width: 32em) {
   .content-section {
@@ -60,6 +70,8 @@
     display: none;
   }
 }
+
+/* FOR SMALLER MOBILES */
 
 @media (max-width: 19em) {
   html {

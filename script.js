@@ -1,3 +1,7 @@
+// NOTE
+
+// Add side-bar-active class using JS or ReactJS to make the side-bar-items active.
+
 "use strict";
 
 // SELECTIONS
